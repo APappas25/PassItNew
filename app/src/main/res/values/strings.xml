@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PassIt</string>
+    <string name="title_activity_add_piece">AddPiece</string>
+    <string name="title_activity_remove_piece">RemovePiece</string>
+</resources>

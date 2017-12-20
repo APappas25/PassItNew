@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/txtPieceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name Piece"
+        android:textAlignment="center"
+        android:layout_marginTop="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/pusherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Button Pusher Chances"
+        android:layout_below="@+id/txtPieceName"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:id="@+id/pusherChances"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pusherText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:max="4" />
+
+    <TextView
+        android:id="@+id/victimText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Potential Victim Chances"
+        android:layout_below="@+id/pusherChances"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:id="@+id/victimChances"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/victimText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:max="4" />
+
+    <TextView
+        android:id="@+id/hitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Max Hits"
+        android:layout_below="@+id/victimChances"
+        android:layout_centerHorizontal="true"/>
+
+    <SeekBar
+        android:id="@+id/hitMax"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hitText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:max="5" />
+
+    <Button
+        android:id="@+id/btnSavePiece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hitMax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Save" />
+
+</RelativeLayout>
